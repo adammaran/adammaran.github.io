@@ -12,7 +12,11 @@ class TemplateInputWidget extends GetView<HomeController> {
       children: [
         Column(children: [
           TextInputWidget(controller.firstController, 'First text', (value) {
-            controller.firstText.value = value;
+            if (value
+                .split('\n')
+                .length < 3) {
+              controller.firstText.value = value;
+            }
           }),
           TextInputWidget(controller.secondController, 'Second text', (value) {
             controller.secondText.value = value;

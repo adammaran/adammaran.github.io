@@ -4,6 +4,7 @@ import 'dart:ui';
 
 import 'dart:ui' as ui;
 import 'package:flutter/services.dart';
+import 'package:templater/app/service/style_service.dart';
 import 'package:universal_html/html.dart' as html;
 
 import 'package:flutter/cupertino.dart';
@@ -12,6 +13,8 @@ import 'package:flutter/rendering.dart';
 import 'package:get/get.dart';
 
 class HomeController extends GetxController {
+  StyleService style = Get.find<StyleService>();
+
   RxBool loadingImage = RxBool(true);
 
   TextEditingController firstController = TextEditingController();

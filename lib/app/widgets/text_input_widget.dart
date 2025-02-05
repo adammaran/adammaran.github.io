@@ -15,6 +15,7 @@ class TextInputWidget extends StatelessWidget {
         decoration: InputDecoration(hintText: hint),
         onChanged: onChange,
         keyboardType: TextInputType.multiline,
-        maxLines: null);
+        minLines: 1,
+        maxLines: 3);
   }
 }

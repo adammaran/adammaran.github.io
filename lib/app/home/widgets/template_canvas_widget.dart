@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:templater/app/home/controllers/home_controller.dart';
+import 'package:templater/app/service/style_service.dart';
 import 'package:templater/app/tools/hrom_hex.dart';
 
 class TemplateCanvasWidget extends GetView<HomeController> {
@@ -37,6 +38,8 @@ class TemplateCanvasWidget extends GetView<HomeController> {
 }
 
 class TemplatePainter extends CustomPainter {
+  StyleService style = Get.find<StyleService>();
+
   String firstText;
   String secondText;
   String thirdText;
@@ -101,12 +104,12 @@ class TemplatePainter extends CustomPainter {
   }
 
   void drawText(Canvas canvas, Size size, String text, double position) {
-    const textStyle = TextStyle(
-      color: Colors.black,
+    TextStyle textStyle = TextStyle(
+      color: HexColor.fromHex(style.fontColor.value),
       decoration: TextDecoration.underline,
       fontWeight: FontWeight.w600,
       fontFamily: 'Verdana',
-      fontSize: 26,
+      fontSize: style.fontSize.value,
     );
 
     final textSpan = TextSpan(

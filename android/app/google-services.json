@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "528730512583",
+    "project_id": "templater-3e947",
+    "storage_bucket": "templater-3e947.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:528730512583:android:f08dcb76615a87619ff2e2",
+        "android_client_info": {
+          "package_name": "com.templater.templater"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJh_Eu1Bq22xOC5vj01GEVj22nNGmxbzY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
