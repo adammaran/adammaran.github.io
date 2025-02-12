@@ -1,11 +1,9 @@
 import 'package:get/get.dart';
 
-import '../home/bindings/home_binding.dart';
-import '../home/bindings/home_binding.dart';
-import '../home/views/home_view.dart';
-import '../home/views/home_view.dart';
-import '../sample/bindings/sample_binding.dart';
-import '../sample/views/sample_view.dart';
+import '../modules/home/bindings/home_binding.dart';
+import '../modules/home/views/home_view.dart';
+import '../modules/auth/bindings/auth_binding.dart';
+import '../modules/auth/views/auth_view.dart';
 
 part 'app_routes.dart';
 
@@ -13,18 +11,18 @@ class AppPages {
   AppPages._();
 
   static const home = Routes.HOME;
-  static const sample = Routes.SAMPLE;
+  static const auth = Routes.AUTH;
 
   static final routes = [
-    GetPage(
-      name: _Paths.SAMPLE,
-      page: () => const SampleView(),
-      binding: SampleBinding(),
-    ),
     GetPage(
       name: _Paths.HOME,
       page: () => const HomeView(),
       binding: HomeBinding(),
+    ),
+    GetPage(
+      name: _Paths.AUTH,
+      page: () => const AuthView(),
+      binding: AuthBinding(),
     ),
   ];
 }

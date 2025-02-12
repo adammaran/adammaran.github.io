@@ -2,8 +2,9 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:templater/app/routes/app_pages.dart';
+import 'package:templater/app/service/analytics_service.dart';
 
-import 'app/service/style_service.dart';
+import 'app/service/company_service.dart';
 import 'firebase_options.dart';
 
 void main() async {
@@ -17,7 +18,8 @@ void main() async {
 }
 
 _initServices() {
-  Get.put(StyleService());
+  Get.put(AnalyticsService());
+  Get.put(CompanyService());
 }
 
 class MyApp extends StatelessWidget {
