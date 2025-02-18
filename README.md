@@ -8,4 +8,4 @@ This Flutter web app allows users to write text on a canvas, customize its font 
 
 **Text Input & Styling:** Add text to a canvas with customizable fonts, sizes and colors.\
 **Image Export:** Download the canvas as an image file.\
-**Multilingual export:** Select multiple languages to translate the text using the Google Translate API, zips all the translated text images and exports them.
+**Multilingual export:** Select multiple languages to translate the text to, paint the tranlsated text on the canvas and add them to a zip arhive for exporting.
